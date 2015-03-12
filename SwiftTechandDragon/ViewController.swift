@@ -9,17 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var powerLabel: UILabel!
+    @IBOutlet var hpLabel: UILabel!
+    
+    var power:Int = 0
+    var hp:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        hp=100
+        hpLabel.text = String(hp)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func powerButton(){
+        power = power+3
+        powerLabel.text = String(power)
+    }
+    
+    @IBAction func hpButton(){
+        hp = hp-power
+        hpLabel.text = String(hp)
+    }
+    
+    @IBAction func retry(){
+        hp = 100
+        hpLabel.text = String(hp)
+        
+        power = 0
+        powerLabel.text = String(power)
+    }
+    
 }
 
