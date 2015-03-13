@@ -8,10 +8,12 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet var powerLabel: UILabel!
     @IBOutlet var hpLabel: UILabel!
+
     
     var power:Int = 0
     var hp:Int = 0
@@ -47,5 +49,18 @@ class ViewController: UIViewController {
         powerLabel.text = String(power)
     }
     
+    
+    @IBAction func infomation(sender:UIButton!){
+        
+        //遷移する画面を設定
+        let myExprainViewController : UIViewController = ExprainViewController()
+ //       let myExprainViewController = UIStoryboard(name: "ExprainViewController", bundle: nil).instantiateInitialViewController() as UIViewController
+        
+        //アニメーションを設定
+        myExprainViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        
+        //Viewを移動
+        self.presentViewController(myExprainViewController, animated: true, completion: nil)
+    }
 }
 
