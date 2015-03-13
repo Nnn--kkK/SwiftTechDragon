@@ -17,6 +17,7 @@
 		37624BEC1AB1DB6900FED617 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37624BEB1AB1DB6900FED617 /* Images.xcassets */; };
 		37624BEF1AB1DB6900FED617 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37624BED1AB1DB6900FED617 /* LaunchScreen.xib */; };
 		37624BFB1AB1DB6900FED617 /* SwiftTechandDragonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37624BFA1AB1DB6900FED617 /* SwiftTechandDragonTests.swift */; };
+		37C1EC591AB3324B00910F3D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C1EC581AB3324B00910F3D /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		37624BF41AB1DB6900FED617 /* SwiftTechandDragonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTechandDragonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37624BF91AB1DB6900FED617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37624BFA1AB1DB6900FED617 /* SwiftTechandDragonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTechandDragonTests.swift; sourceTree = "<group>"; };
+		37C1EC581AB3324B00910F3D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		3735AB5F1AB3244800F5BE15 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				37C1EC581AB3324B00910F3D /* icon.png */,
 				3735AB641AB3267800F5BE15 /* haikei.jpg */,
 				3735AB621AB3261700F5BE15 /* slime.png */,
 				3735AB601AB3245000F5BE15 /* leaf_blue.png */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3735AB651AB3267800F5BE15 /* haikei.jpg in Resources */,
+				37C1EC591AB3324B00910F3D /* icon.png in Resources */,
 				37624BEA1AB1DB6900FED617 /* Main.storyboard in Resources */,
 				37624BEF1AB1DB6900FED617 /* LaunchScreen.xib in Resources */,
 				3735AB631AB3261700F5BE15 /* slime.png in Resources */,
