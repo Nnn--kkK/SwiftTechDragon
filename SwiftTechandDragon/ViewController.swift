@@ -46,8 +46,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func hpButton(){
+        
+
         hp = hp-power
         hpLabel.text = String(hp)
+        
+        if hp<0{
+            
+            hp=0
+            hpLabel.text = String(hp)
+
+        }
     }
     
     @IBAction func retry(){
@@ -61,7 +70,7 @@ class ViewController: UIViewController {
     
     @IBAction func infomation(sender:AnyObject){
         
-        //遷移する画面を設定l
+        //遷移する画面を設定
         let myExprainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("info") as UIViewController
         
         //アニメーションを設定

@@ -121,8 +121,15 @@
                                 <rect key="frame" x="16" y="471" width="288" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="スライムをたおそーう！" id="c5W-jb-MtP">
+                                <rect key="frame" x="32" y="45" width="256" height="293"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.38823533059999998" green="0.54901963470000004" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vfl-dL-lAB">
-                                <rect key="frame" x="16" y="386" width="288" height="30"/>
+                                <rect key="frame" x="16" y="396" width="288" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.15686275059999999" green="0.29019609089999998" blue="0.47058826679999999" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="back">
@@ -133,13 +140,6 @@
                                     <action selector="back" destination="onw-2i-wMk" eventType="touchUpInside" id="nLN-Eb-OPj"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="スライムをたおそーう！" id="c5W-jb-MtP">
-                                <rect key="frame" x="32" y="45" width="256" height="293"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.38823533059999998" green="0.54901963470000004" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.38823533059999998" green="0.54901963470000004" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
