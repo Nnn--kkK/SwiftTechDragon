@@ -18,12 +18,21 @@ class ViewController: UIViewController {
     var power:Int = 0
     var hp:Int = 0
     
+    //遷移先のstoryboard
+ //   var infoView: UIStoryboard!
+ //   var myExprainViewController: UIViewController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         hp=100
         hpLabel.text = String(hp)
+        
+        //遷移先のstoryboard
+    //    infoView = UIStoryboard(name: "ExprainViewController", bundle: nil)
+    //    myExprainViewController = infoView!.instantiateViewControllerWithIdentifier("ExprainViewController") as UIViewController
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,11 +59,10 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func infomation(sender:UIButton!){
+    @IBAction func infomation(sender:AnyObject){
         
-        //遷移する画面を設定
-        let myExprainViewController : UIViewController = ExprainViewController()
- //       let myExprainViewController = UIStoryboard(name: "ExprainViewController", bundle: nil).instantiateInitialViewController() as UIViewController
+        //遷移する画面を設定l
+        let myExprainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("info") as UIViewController
         
         //アニメーションを設定
         myExprainViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl

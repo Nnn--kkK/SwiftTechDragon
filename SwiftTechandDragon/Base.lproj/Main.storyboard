@@ -112,7 +112,7 @@
         <!--Exprain View Controller-->
         <scene sceneID="A0J-WT-U17">
             <objects>
-                <viewController id="onw-2i-wMk" customClass="ExprainViewController" customModule="SwiftTechandDragon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="info" id="onw-2i-wMk" customClass="ExprainViewController" customModule="SwiftTechandDragon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jVb-jG-iRT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +129,9 @@
                                     <color key="titleColor" red="0.38823533059999998" green="0.54901963470000004" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="back" destination="onw-2i-wMk" eventType="touchUpInside" id="nLN-Eb-OPj"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="スライムをたおそーう！" id="c5W-jb-MtP">
                                 <rect key="frame" x="32" y="45" width="256" height="293"/>
@@ -140,9 +143,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.38823533059999998" green="0.54901963470000004" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="backbutton" destination="Vfl-dL-lAB" id="7uN-2u-lMt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzO-V1-eSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

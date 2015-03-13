@@ -11,16 +11,14 @@ import UIKit
 
 
 class ExprainViewController: UIViewController {
-    
-    @IBOutlet var backbutton: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        backbutton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(backbutton)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,17 +42,5 @@ class ExprainViewController: UIViewController {
     }
     
     
-    func onClickMyButton(sender: UIButton){
-        
-        // 遷移するViewを定義.
-        let myViewController: UIViewController = ViewController()
-        
-        // アニメーションを設定.
-        myViewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        
-        // Viewの移動.
-        self.presentViewController(myViewController, animated: true, completion: nil)
-        
-    }
-
+   
 }
